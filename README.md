@@ -1,6 +1,10 @@
 # Kometa
 
-Collection of my custom overlay builders for Kometa
+Collection of custom overlay builders for Kometa provided by JMXD
+
+This fork and particularly this branch is updated to support low quality codecs like AAC/OPUS/FLAC/MP3 - which JMXD has declined to add in the repo.
+
+This local branch will not be merged into main branch (as of now)
 
 ## audience_rating.yml
 
@@ -30,15 +34,13 @@ Below is an example of what this builder will create.
 | 1080p (HD)  | Collector's Edition | HDR10+                | DTS-HD MA          |
 |             | Director's Cut      | Dolby Vision          | Dolby Atmos        |
 |             | Extended Cut        | Dolby Vision + HDR    | Dolby TrueHD Atmos |
-|             | Extended Edition    | Dolby Vision + HDR10+ |                    |
-|             | IMAX / (Enhanced)   |                       |                    |
-|             | Minus Color         |                       |                    |
-|             | Special Edition     |                       |                    |
+|             | Extended Edition    | Dolby Vision + HDR10+ | FLAC               |
+|             | IMAX / (Enhanced)   |                       | AAC                |
+|             | Minus Color         |                       | OPUS               |
+|             | Special Edition     |                       | MP3                |
 |             | Unrated Edition     |                       |                    |
 
 > [!NOTE]
-> Only "High Quality" formats are intended to be supported.
->
 > Dolby Vision with HDR/HDR10+ fallback support is correctly detected and matched separately from exclusive DV, but only Dolby Vision will be visibly shown for those files. See examples at the bottom for an alternative option.
 
 ### Available template variables:
@@ -101,10 +103,6 @@ overlay_files:
 ```
 > [!IMPORTANT]
 > When running the overlay file multiple times on the same library like the above example, make sure to disable both gradients on subsequent uses or it will apply them again.
-
-<br />
-
-### ☕ [buymeacoffee.com/jmxd](https://buymeacoffee.com/jmxd)
 
 <br /><br />
 
