@@ -177,6 +177,8 @@ templates:
             value: '(?i)\[(MP3( 2\.0)?)\]'
           - key: OPUS
             value: '(?i)\[(Opus( 5\.1| 7\.1)?)\]'
+          - key: AC3
+            value: '(?i)\[(AC3( 5\.1| 7\.1| 2\.0))\]'
     optional:
       - use_<<type>>
     run_definition:
@@ -298,16 +300,19 @@ overlays:
     variables: { key: TrueHD-Atmos, weight: 300, type: audio }
     template: [ name: standard, name: codec_info ]
   AAC:
-    variables: { key: AAC, weight: 280, type: audio }
+    variables: { key: AAC, weight: 320, type: audio }
     template: [ name: standard, name: codec_info ]
   FLAC:
     variables: { key: FLAC, weight: 280, type: audio }
     template: [ name: standard, name: codec_info ]
   MP3:
-    variables: { key: MP3, weight: 320, type: audio }
+    variables: { key: MP3, weight: 380, type: audio }
     template: [ name: standard, name: codec_info ]
   OPUS:
     variables: { key: OPUS, weight: 280, type: audio }
+    template: [ name: standard, name: codec_info ]
+  AC3:
+    variables: { key: AC3, weight: 350, type: audio}
     template: [ name: standard, name: codec_info ]
   DV-DigitalPlus:
     variables: { key: DV-DigitalPlus, weight: 310, type: combined }
