@@ -38,7 +38,14 @@ Below is an example of what this builder will create.
 |             | IMAX / (Enhanced)   |                       | AAC                |
 |             | Minus Color         |                       | OPUS               |
 |             | Special Edition     |                       | MP3                |
+|             | Director's Cut      | Dolby Vision          | DTS-X              |
+|             | Extended Cut        | Dolby Vision + HDR    | Dolby Atmos        |
+|             | Extended Edition    | Dolby Vision + HDR10+ | Dolby TrueHD       |
+|             | IMAX / (Enhanced)   |                       | Dolby TrueHD Atmos |
+|             | Minus Color         |                       |                    |
+|             | Special Edition     |                       |                    |
 |             | Unrated Edition     |                       |                    |
+|             | ... & more          |                       |                    |
 
 > [!NOTE]
 > Dolby Vision with HDR/HDR10+ fallback support is correctly detected and matched separately from exclusive DV, but only Dolby Vision will be visibly shown for those files. See examples at the bottom for an alternative option.
