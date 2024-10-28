@@ -123,6 +123,8 @@ templates:
             value: '(?i)\[(HDR10Plus)\]'
           - key: DigitalPlus
             value: '(?i)\[(EAC3( 5\.1)?)\]'
+          - key: DTS
+            value: '(?i)\[(DTS( 5\.1| 7\.1|)?)\]'
           - key: DTS-HD
             value: '(?i)\[(DTS-HD MA(?: 5\.1| 7\.1)?)\]'
           - key: DTS-X
@@ -354,6 +356,9 @@ overlays:
     template: [ name: standard, name: codec_info ]
   AC3:
     variables: { key: AC3, weight: 350, type: audio}
+    template: [ name: standard, name: codec_info ]
+  DTS:
+    variables: { key: DTS, weight: 350, type: audio}
     template: [ name: standard, name: codec_info ]
   DV-DigitalPlus:
     variables: { key: DV-DigitalPlus, weight: 310, type: combined }

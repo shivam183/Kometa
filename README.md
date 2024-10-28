@@ -2,7 +2,7 @@
 
 Collection of custom overlay builders for Kometa provided by JMXD
 
-This fork and particularly this branch is updated to support low quality codecs like AAC/OPUS/FLAC/MP3 - which JMXD has declined to add in the repo.
+This fork and particularly this branch is updated to support low quality codecs like AAC/OPUS/FLAC/MP3/DTS 5.1 - which JMXD has declined to add in the repo.
 
 This local branch will not be merged into main branch (as of now)
 
@@ -38,6 +38,7 @@ Below is an example of what this builder will create.
 |             | IMAX / (Enhanced)   |                       | AAC                |
 |             | Minus Color         |                       | OPUS               |
 |             | Special Edition     |                       | MP3                |
+|             |                     |                       | DTS 5.1            |
 |             | Director's Cut      | Dolby Vision          | DTS-X              |
 |             | Extended Cut        | Dolby Vision + HDR    | Dolby Atmos        |
 |             | Extended Edition    | Dolby Vision + HDR10+ | Dolby TrueHD       |
