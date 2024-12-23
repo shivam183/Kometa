@@ -122,7 +122,7 @@ templates:
           - key: Plus
             value: '(?i)\[(HDR10Plus)\]'
           - key: DigitalPlus
-            value: '(?i)\[(EAC3( 5\.1)?)\]'
+            value: '(?i)\[(EAC3( 5\.1| 2\.0| 7\.1)?)\]'
           - key: DTS
             value: '(?i)\[(DTS( 5\.1| 7\.1|)?)\]'
           - key: DTS-HD
@@ -140,15 +140,15 @@ templates:
           - key: DV-Plus
             value: '(?i)\[(DV HDR10Plus)\]'
           - key: DV-DigitalPlus
-            value: '(?i)\[(?!.*HDR)(DV)\].*\[(EAC3( 5\.1)?)\]'
+            value: '(?i)\[(?!.*HDR)(DV)\].*\[(EAC3( 5\.1| 7\.1)?)\]'
           - key: HDR-DigitalPlus
-            value: '(?i)\[(HDR10)\].*\[(EAC3( 5\.1)?)\]'
+            value: '(?i)\[(HDR10)\].*\[(EAC3( 5\.1| 7\.1)?)\]'
           - key: Plus-DigitalPlus
-            value: '(?i)\[(HDR10Plus)\].*\[(EAC3( 5\.1)?)\]'
+            value: '(?i)\[(HDR10Plus)\].*\[(EAC3( 5\.1| 7\.1)?)\]'
           - key: DV-HDR-DigitalPlus
-            value: '(?i)\[(DV HDR10)\].*\[(EAC3( 5\.1)?)\]'
+            value: '(?i)\[(DV HDR10)\].*\[(EAC3( 5\.1| 7\.1)?)\]'
           - key: DV-Plus-DigitalPlus
-            value: '(?i)\[(DV HDR10Plus)\].*\[(EAC3( 5\.1)?)\]'
+            value: '(?i)\[(DV HDR10Plus)\].*\[(EAC3( 5\.1| 7\.1)?)\]'
           - key: DV-DTS-HD
             value: '(?i)\[(?!.*HDR)(DV)\].*\[(DTS-HD MA(?: 5\.1| 7\.1)?)\]'
           - key: HDR-DTS-HD
