@@ -198,6 +198,8 @@ templates:
             value: '(?i)(?=.*\bDV[ .]HDR10\b)(?=.*\bTrueHD[ .]Atmos[ .][57]\.1\b)'
           - key: DV-Plus-TrueHD-Atmos
             value: '(?i)(?=.*\bDV[ .]HDR10Plus\b)(?=.*\bTrueHD[ .]Atmos[ .][57]\.1\b)'
+          - key: DTS
+            value: '(?i)\[(DTS( 5\.1| 7\.1|)?)\]'
           - key: AAC
             value: '(?i)\[(AAC( 5\.1| 7\.1| 2\.0)?)\]'
           - key: FLAC
@@ -207,7 +209,7 @@ templates:
           - key: OPUS
             value: '(?i)\[(Opus( 5\.1| 7\.1)?)\]'
           - key: AC3
-            value: '(?i)\[(AC3( 5\.1| 7\.1| 2\.0))\]'   
+            value: '(?i)\[(AC3( 5\.1| 7\.1| 2\.0))\]'
     optional:
       - use_<<type>>
     run_definition:
@@ -375,7 +377,7 @@ overlays:
     variables: { key: AC3, weight: 350, type: audio}
     template: [ name: standard, name: codec_info ]
   DTS:
-    variables: { key: DTS, weight: 350, type: audio}
+    variables: { key: DTS, weight: 350, type: audio }
     template: [ name: standard, name: codec_info ]
   DV-DigitalPlus:
     variables: { key: DV-DigitalPlus, weight: 310, type: combined }
